@@ -1,8 +1,8 @@
-# Validatify
+# password-strength-tester
 
 ## Project Overview
 
-Validatify is a simple project that focuses on solidifying skills on form validation.
+Password-strength-tester...
 
 ## Project Architecture
 
@@ -10,30 +10,20 @@ MVC Architecture
 
 ### Folder Structure
 
-```
-├── index.html
-├── src
-│   ├── controller
-│   │   └── main.js
-│   ├── model
-│   │   ├── submit-btn.js
-│   │   ├── validate-email.js
-│   │   └── validate-password.js
-│   └── view
-│       └── style.css
-```
-
-## How to run validatify
+## How to run password-strength-tester
 
 1. Clone repo
 
 ```
 git clone git@github.com:STEPHEN-EMMAHI/form-validating.git
 ```
-2. cd project-name
+
+2. cd project
+
 ```
-cd form-validating
+cd password-strength-tester
 ```
+
 3. install dependencies
 
 ```
