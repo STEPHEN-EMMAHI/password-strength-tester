@@ -52,10 +52,26 @@
                 show
               </button>
             </div>
+            <div class="strength-container flex items-center gap-4 p-2">
+              <!-- progress bar track -->
+              <div
+                class="strength-track w-full h-1 bg-[#e5e7eb] rounded-full overflow-hidden"
+                role="progressbar"
+                id="strength-bar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+                aria-label="Password-strength"
+              >
+                <!-- active fill bar -->
+                <div
+                  class="strength-fill h-full transition-all duration-300 ease-in-out"
+                  id="strength-fill"
+                ></div>
+              </div>
+              <span class="strength-label" id="strength-label"></span>
+            </div>
             <div id="password-rules" class="hidden text-red-500">
-              <p id="char-long">From 8 to 20 characters long</p>
-              <p id="upper">At least one uppercase</p>
-              <p id="lower">At least one lowercase</p>
               <p id="samePasswordAndEmail" class="hidden">
                 Password cannot be same as email
               </p>

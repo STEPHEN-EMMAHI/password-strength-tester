@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.strength-fill.weak {
+  width: 33.33%;
+  background-color: #ef4444;
+}
+
+.strength-fill.medium {
+  width: 66.66%;
+  background-color: #eab308;
+}
+
+.strength-fill.strong {
+  width: 100%;
+  background-color: #22c55e;
+}

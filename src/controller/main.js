@@ -7,6 +7,7 @@ import {
   showOrHideConfirmPassword,
 } from "../model/validate-password.js";
 import { submitBtn } from "../model/submit-btn.js";
+import { passwordStrength } from "../model/password-strength.js";
 
 const email = document.getElementById("email");
 email.addEventListener("input", () => {
@@ -22,6 +23,7 @@ showHidePassword.addEventListener("click", showOrHidePassword);
 
 password.addEventListener("input", () => {
   validatePasswordRules();
+  passwordStrength();
   validateConfirmPassword();
   submitBtn();
 });

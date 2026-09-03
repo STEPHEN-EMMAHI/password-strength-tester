@@ -1,3 +1,5 @@
+import { MEDIUM_LENGTH } from "./password-strength.js";
+
 export function submitBtn() {
   const email = document.getElementById("email");
   const password = document.getElementById("password");
@@ -6,16 +8,7 @@ export function submitBtn() {
     email.value,
   );
 
-  const upperCase = document.getElementById("upper");
-  const hasUpperCase = /[A-Z]+/.test(password.value);
-
-  const lowerCase = document.getElementById("lower");
-  const hasLowerCase = /[a-z]+/.test(password.value);
-
-  const passwordLengthValid =
-    password.value.length >= 8 && password.value.length <= 20;
   const checkBox = document.getElementById("checkbox");
-
   const submitButton = document.getElementById("submitBtn");
 
   const confirmPassword = document.getElementById("confirmPassword");
@@ -23,12 +16,10 @@ export function submitBtn() {
 
   if (
     emailRegex &&
-    passwordLengthValid &&
-    hasUpperCase &&
-    hasLowerCase &&
     checkBox.checked &&
     password.value !== email.value &&
-    validateBothPasswordFields
+    validateBothPasswordFields &&
+    password.value.length >= MEDIUM_LENGTH
   ) {
     submitButton.disabled = false;
     submitButton.classList.remove("bg-red-500");
