@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Password-strength-tester...
+Password-strength-tester is a project that helps me to understand how passwords are built and architectured.
 
 ## Project Architecture
 
@@ -10,12 +10,31 @@ MVC Architecture
 
 ### Folder Structure
 
+```text
+.
+├── README.md
+├── favicon-32x32.png
+├── index.html
+├── robots.txt
+├── src
+│   ├── controller
+│   │   └── main.js
+│   ├── model
+│   │   ├── password-strength.js
+│   │   ├── submit-btn.js
+│   │   ├── validate-email.js
+│   │   └── validate-password.js
+│   └── view
+│       └── style.css
+└── vite.config.ts
+```
+
 ## How to run password-strength-tester
 
 1. Clone repo
 
 ```
-git clone git@github.com:STEPHEN-EMMAHI/form-validating.git
+git clone git@github.com:STEPHEN-EMMAHI/password-strength-tester.git
 ```
 
 2. cd project
@@ -42,6 +61,10 @@ npm run dev
 ## Tech Stack
 
 [![Tech Skills](https://skillicons.dev/icons?i=html,css,js,tailwind,vite,git)](https://skillicons.dev)
+
+## Concepts learnt
+
+1. How to build a progress bar
 
 ## Limitations
 
